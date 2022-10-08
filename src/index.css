@@ -31,6 +31,14 @@ nav {
   font-weight: bold;
 }
 
+.title{
+  text-align: center;
+}
+
+.form-select{
+  text-align: center;
+}
+
 .poke-name{
   text-align: center;
 }

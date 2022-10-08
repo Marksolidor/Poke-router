@@ -22,9 +22,9 @@ const SearchPkm = () => {
     <>
       <div className="search">
         {console.log(data)}
-        <h2>Selecciona el Pokémon que quieras</h2>
+        <h2 className="title">Selecciona un Pokémon para ver sus estadisticas</h2>
         <select
-          className="selector"
+          className="form-select"
           onChange={(event) => goPokemon(event.target.value)}
         >
           <option value="">pokemon</option>
