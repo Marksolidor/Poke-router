@@ -30,3 +30,31 @@ nav {
   text-align: center;
   font-weight: bold;
 }
+
+.poke-name{
+  text-align: center;
+}
+
+.poke-container{
+  display: flex;
+}
+
+.type-title{
+  text-align: center;
+}
+
+.poke-img{
+  width: 75%;
+}
+
+.pokemon-type {
+  display: flex;
+  justify-content: space-around;
+}
+
+.poke-stats{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}

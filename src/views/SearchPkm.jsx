@@ -31,7 +31,7 @@ const SearchPkm = () => {
           {data.results.map((pokemon) => (
             <option key={pokemon.name} value={pokemon.name}>
               {" "}
-              {pokemon.name} #{pokemon.id}
+              {pokemon.name}
             </option>
           ))}
         </select>
