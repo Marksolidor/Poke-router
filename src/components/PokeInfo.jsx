@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const PokeInfo = () => {
 
@@ -47,8 +48,15 @@ const PokeInfo = () => {
             <h4>Defensa Especial: {pokemon.stats[4].base_stat}</h4>
             <h4>Velocidad: {pokemon.stats[5].base_stat}</h4>
                 
-
+            <div>
+                           <Link to={`/pokemons`}>
+                           <button type="button" className="btn btn-success">
+                             Volver a Pokémon
+                           </button>
+                         </Link>
+                       </div>
                 </>
+  
             )}
         </>
     );
