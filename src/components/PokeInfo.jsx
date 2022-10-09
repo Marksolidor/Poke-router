@@ -23,7 +23,7 @@ const PokeInfo = () => {
     <>
       {pokemon && (
         <>
-          <h1 className="poke-name">{pokemon.name}</h1>
+          <h1 className="poke-name pt-5">{pokemon.name}</h1>
           <div className="poke-container">
             <div className="poke-card">
               <img
@@ -57,9 +57,9 @@ const PokeInfo = () => {
               <h4 className="stat">Velocidad: {pokemon.stats[5].base_stat}</h4>
             </div>
           </div>
-          <div className="text-center">
+          <div className="text-center pt-3">
             <Link to={`/pokemons`}>
-              <button type="button" className="btn btn-primary pt-6">
+              <button type="button" className="btn btn-primary">
                 Volver a Pokemons
               </button>
             </Link>
