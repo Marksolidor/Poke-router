@@ -21,7 +21,7 @@ const SearchPkm = () => {
   return (
     <>
       <div className="search">
-        <h2 className="title">
+        <h2 className="title pt-5">
           Selecciona un Pokémon para ver sus estadisticas
         </h2>
         <select
