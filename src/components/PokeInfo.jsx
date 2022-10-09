@@ -36,28 +36,31 @@ const PokeInfo = () => {
                 {pokemon.types.map((type, idx) => {
                   return (
                     <div key={idx} className="pokemon-type-text">
-                      <h4>{type.type.name}</h4>
+                      <h4 className="type">{type.type.name}</h4>
                     </div>
                   );
                 })}
               </div>
             </div>
             <div className="poke-stats">
-              <h4 className="text">
+              <h4 className="stat">
                 Puntos de Salud: {pokemon.stats[0].base_stat}
               </h4>
-              <h4>Ataque: {pokemon.stats[1].base_stat}</h4>
-              <h4>Defensa: {pokemon.stats[2].base_stat}</h4>
-              <h4>Ataque Especial: {pokemon.stats[3].base_stat}</h4>
-              <h4>Defensa Especial: {pokemon.stats[4].base_stat}</h4>
-              <h4>Velocidad: {pokemon.stats[5].base_stat}</h4>
+              <h4 className="stat">Ataque: {pokemon.stats[1].base_stat}</h4>
+              <h4 className="stat">Defensa: {pokemon.stats[2].base_stat}</h4>
+              <h4 className="stat">
+                Ataque Especial: {pokemon.stats[3].base_stat}
+              </h4>
+              <h4 className="stat">
+                Defensa Especial: {pokemon.stats[4].base_stat}
+              </h4>
+              <h4 className="stat">Velocidad: {pokemon.stats[5].base_stat}</h4>
             </div>
           </div>
-
           <div className="text-center">
             <Link to={`/pokemons`}>
-              <button type="button" className="btn btn-success">
-                Volver a Pokémon
+              <button type="button" className="btn btn-primary pt-6">
+                Volver a Pokemons
               </button>
             </Link>
           </div>

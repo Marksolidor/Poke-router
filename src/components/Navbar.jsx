@@ -4,7 +4,7 @@ export default function Navbar() {
   const setActiveClass = ({ isActive }) => (isActive ? "active" : "no-active");
 
   return (
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light">
       <div>
         <img
           className="icon"

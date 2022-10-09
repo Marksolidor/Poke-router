@@ -37,7 +37,11 @@ const SearchPkm = () => {
           ))}
         </select>
         <div className="pikachu">
-          <img alt='running pikachu' className="img-fluid" src="https://64.media.tumblr.com/02f44b33d0f465fea65327f50f977a69/tumblr_mkw8c4xTSz1r67h3uo1_250.gif"></img>
+          <img
+            alt="running pikachu"
+            className="img-fluid"
+            src="https://64.media.tumblr.com/02f44b33d0f465fea65327f50f977a69/tumblr_mkw8c4xTSz1r67h3uo1_250.gif"
+          ></img>
         </div>
       </div>
     </>
