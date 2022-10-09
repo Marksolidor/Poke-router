@@ -7,11 +7,13 @@ const ImgProvider = ({ children }) => {
 
   useEffect(() => {
     const dataConsult = async () => {
+      try{
       const response = await fetch(
-        "https://pokeapi.co/api/v2/pokemon/?limit=2000"
+        `https://pokeapi.co/api/v2/pokemon/?limit=151`
       );
       const dataImg = await response.json();
       setData(dataImg);
+      } catch (err) {}
     };
 
     dataConsult();
