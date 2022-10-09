@@ -30,13 +30,32 @@ nav {
   text-align: center;
   font-weight: bold;
 }
+.img-fluid{
+  padding-bottom: 1em;
+}
+
+.description{
+  text-align: center;
+  font-weight: bold;
+  padding-left: 2em;
+  padding-right: 2em;
+}
 
 .title{
   text-align: center;
 }
 
+.search{
+  padding: 0 3em 0 3em ;
+}
+
 .form-select{
   text-align: center;
+}
+
+.pikachu{
+  text-align: center;
+  padding-top: 3em;
 }
 
 .poke-name{
