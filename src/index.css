@@ -29,7 +29,21 @@ nav {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
+  flex-wrap: nowrap !important
 }
+
+.collapse{
+  justify-content: end;
+}
+
+.container-fluid{
+  justify-content: end !important
+}
+
+.icon{
+  width: 32px;
+}
+
 .img-fluid{
   padding-bottom: 1em;
 }
@@ -64,6 +78,7 @@ nav {
 
 .poke-container{
   display: flex;
+  justify-content: center;
 }
 
 .type-title{

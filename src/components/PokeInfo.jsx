@@ -28,6 +28,7 @@ const PokeInfo = () => {
             <div className="poke-card">
               <img
                 className="poke-img"
+                alt={pokemon.name}
                 src={pokemon.sprites?.other["official-artwork"].front_default}
               ></img>
               <h4 className="type-title">Tipo</h4>
