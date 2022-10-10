@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ImgProvider from "./context";
+import NameProvider from "./context/NameProvider";
 import Navbar from "./components/Navbar";
 import Home from "./views/Home";
 import SearchPkm from "./views/SearchPkm"
@@ -8,7 +8,7 @@ import NotFound from "./views/NotFound";
 
 export default function App() {
   return (
-    <ImgProvider>
+    <NameProvider>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -18,6 +18,6 @@ export default function App() {
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </ImgProvider>
+    </NameProvider>
   );
 }

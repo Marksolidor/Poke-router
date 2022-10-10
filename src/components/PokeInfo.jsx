@@ -13,7 +13,7 @@ const PokeInfo = () => {
         const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
         const datos = await resp.json();
         setPokemon(datos);
-      } catch (err) {}
+      } catch (err) {alert( "Nuestras disculpas, parece que un Porygon se ha metido en el sistema." );}
     };
 
     getAPI();
