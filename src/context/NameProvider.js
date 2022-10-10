@@ -1,8 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 
-export const Context = createContext();
-
-const ImgProvider = ({ children }) => {
+export const getPokemon = createContext();
+const NameProvider = ({ children }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -13,22 +12,22 @@ const ImgProvider = ({ children }) => {
       );
       const dataImg = await response.json();
       setData(dataImg);
-      } catch (err) {}
+      } catch (err) {alert( "Nuestras disculpas, parece que un Porygon se ha metido en el sistema." );}
     };
 
     dataConsult();
   }, []);
 
   return (
-    <Context.Provider
+    <getPokemon.Provider
       value={{
         data,
         setData,
       }}
     >
       {children}
-    </Context.Provider>
+    </getPokemon.Provider>
   );
 };
 
-export default ImgProvider;
+export default NameProvider;

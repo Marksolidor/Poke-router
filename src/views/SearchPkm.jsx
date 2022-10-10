@@ -1,19 +1,10 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { Context } from "../context";
+import { getPokemon } from "../context/NameProvider";
 
 const SearchPkm = () => {
-  const { data } = useContext(Context);
-  const [name, setName] = useState("");
-
+  const { data } = useContext(getPokemon);
   const navigate = useNavigate();
-  const handle = (event) => {
-    const character = event.target.value;
-    if (character && character !== "") {
-      setName(character);
-    }
-  };
-
   const goPokemon = (name) => {
     navigate(`/pokemons/${name}`);
   };
